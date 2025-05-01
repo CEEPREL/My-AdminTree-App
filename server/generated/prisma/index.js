@@ -145,7 +145,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/macbookpro/Downloads/tactology-main/generated/prisma",
+      "value": "/Users/macbookpro/Downloads/tactology/server/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -156,14 +156,19 @@ const config = {
         "fromEnvVar": null,
         "value": "darwin",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "debian-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/macbookpro/Downloads/tactology-main/prisma/schema.prisma",
+    "sourceFilePath": "/Users/macbookpro/Downloads/tactology/server/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.7.0",
@@ -172,7 +177,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
@@ -181,8 +186,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id             Int      @id @default(autoincrement())\n  name           String\n  hashedPassword String\n  hashedToken    String\n  createdAt      DateTime @default(now())\n  updatedAt      DateTime @default(now())\n  email          String   @unique(map: \"User_username_key\")\n}\n\nmodel Department {\n  id             Int             @id @default(autoincrement())\n  name           String\n  createdAt      DateTime        @default(now())\n  updatedAt      DateTime        @updatedAt\n  subDepartments SubDepartment[] @relation(\"DepartmentSubDepartments\")\n}\n\nmodel SubDepartment {\n  id           Int        @id @default(autoincrement())\n  name         String\n  departmentId Int\n  createdAt    DateTime   @default(now())\n  updatedAt    DateTime   @updatedAt\n  department   Department @relation(\"DepartmentSubDepartments\", fields: [departmentId], references: [id])\n}\n",
-  "inlineSchemaHash": "6375a5de582639a7cdb37868637a5a49e5243b5f34123e911e217744524ead07",
+  "inlineSchema": "generator client {\n  provider      = \"prisma-client-js\"\n  output        = \"../generated/prisma\"\n  binaryTargets = [\"native\", \"debian-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id             Int      @id @default(autoincrement())\n  name           String\n  hashedPassword String\n  hashedToken    String\n  createdAt      DateTime @default(now())\n  updatedAt      DateTime @default(now())\n  email          String   @unique(map: \"User_username_key\")\n}\n\nmodel Department {\n  id             Int             @id @default(autoincrement())\n  name           String\n  createdAt      DateTime        @default(now())\n  updatedAt      DateTime        @updatedAt\n  subDepartments SubDepartment[] @relation(\"DepartmentSubDepartments\")\n}\n\nmodel SubDepartment {\n  id           Int        @id @default(autoincrement())\n  name         String\n  departmentId Int\n  createdAt    DateTime   @default(now())\n  updatedAt    DateTime   @updatedAt\n  department   Department @relation(\"DepartmentSubDepartments\", fields: [departmentId], references: [id])\n}\n",
+  "inlineSchemaHash": "c0eee3362b30765fb4b630d545c6b4de60ad5ae9eae90408f5cdb9ef6ba8dfcc",
   "copyEngine": true
 }
 
@@ -223,6 +228,10 @@ Object.assign(exports, Prisma)
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-darwin.dylib.node");
 path.join(process.cwd(), "generated/prisma/libquery_engine-darwin.dylib.node")
+
+// file annotations for bundling tools to include these files
+path.join(__dirname, "libquery_engine-debian-openssl-3.0.x.so.node");
+path.join(process.cwd(), "generated/prisma/libquery_engine-debian-openssl-3.0.x.so.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
 path.join(process.cwd(), "generated/prisma/schema.prisma")
