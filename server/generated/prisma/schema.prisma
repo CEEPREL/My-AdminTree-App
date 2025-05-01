@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  name           String
+  hashedPassword String
+  hashedToken    String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @default(now())
+  email          String   @unique(map: "User_username_key")
+}
+
+model Department {
+  id             Int             @id @default(autoincrement())
+  name           String
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  subDepartments SubDepartment[] @relation("DepartmentSubDepartments")
+}
+
+model SubDepartment {
+  id           Int        @id @default(autoincrement())
+  name         String
+  departmentId Int
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  department   Department @relation("DepartmentSubDepartments", fields: [departmentId], references: [id])
+}
