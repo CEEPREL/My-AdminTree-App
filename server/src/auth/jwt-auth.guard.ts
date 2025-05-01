@@ -13,7 +13,7 @@ export class JwtAuthGuard implements CanActivate {
   ): boolean | Promise<boolean> | Observable<boolean> {
     // Use GqlExecutionContext to get the correct request context for GraphQL
     const ctx = GqlExecutionContext.create(context);
-    const request = ctx.getContext().req; // Get the request object from the context
+    const request = ctx.getContext().req;
 
     const token = request.headers.authorization?.split(' ')[1]; // Extract token from 'Authorization' header
 
@@ -23,9 +23,9 @@ export class JwtAuthGuard implements CanActivate {
 
     try {
       const decoded = this.jwtService.verify(token, {
-        secret: process.env.JWT_SECRET, // Use the secret from your environment variable
+        secret: process.env.JWT_SECRET,
       });
-      request.user = decoded; // Attach the decoded JWT payload to the request
+      request.user = decoded;
       return true;
     } catch (error) {
       console.error('JWT verification failed:', error);
