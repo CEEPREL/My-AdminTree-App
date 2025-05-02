@@ -64,6 +64,8 @@ tactology
 
 ```
 
+- Clone the repo
+
 ```bash
 git clone https://github.com/CEEPREL/tactology.git
 
