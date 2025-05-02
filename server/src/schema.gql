@@ -36,7 +36,7 @@ type Department {
 }
 
 type Query {
-  getAllDepartments: [Department!]!
+  getAllDepartments(skip: Int, take: Int): [Department!]!
   getDepartment(id: Int!): Department!
 }
 

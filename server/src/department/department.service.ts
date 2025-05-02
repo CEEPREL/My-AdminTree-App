@@ -28,9 +28,12 @@ export class DepartmentService {
     return createdDepartment;
   }
 
-  async findAll() {
+  async findAll(skip = 0, take = 10) {
     return this.prisma.department.findMany({
+      skip,
+      take,
       include: { subDepartments: true },
+      orderBy: { id: 'asc' },
     });
   }
 

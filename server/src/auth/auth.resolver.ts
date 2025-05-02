@@ -21,18 +21,4 @@ export class AuthResolver {
   login(@Args('loginInput') loginInput: LoginInput) {
     return this.authService.login(loginInput);
   }
-
-  // // Protect this query with JWT Auth Guard
-  // @UseGuards(JwtAuthGuard)
-  // @Query(() => [Auth], { name: 'auth' })
-  // findAll() {
-  //   return this.authService.findAll();
-  // }
-
-  // // Protect this query with JWT Auth Guard
-  // @UseGuards(JwtAuthGuard)
-  // @Query(() => Auth, { name: 'auth' })
-  // findOne(@Args('id', { type: () => Int }) id: number) {
-  //   return this.authService.findOne(id);
-  // }
 }

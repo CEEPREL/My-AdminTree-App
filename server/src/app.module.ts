@@ -14,6 +14,8 @@ import { DepartmentModule } from './department/department.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      path: '/graphql',
+      playground: true,
     }),
     AuthModule,
     UserModule,

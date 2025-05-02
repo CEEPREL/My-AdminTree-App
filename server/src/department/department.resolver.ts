@@ -20,8 +20,11 @@ export class DepartmentResolver {
 
   @UseGuards(JwtAuthGuard)
   @Query(() => [Department], { name: 'getAllDepartments' })
-  findAll() {
-    return this.departmentService.findAll();
+  async departments(
+    @Args('skip', { type: () => Int, nullable: true }) skip = 0,
+    @Args('take', { type: () => Int, nullable: true }) take = 10,
+  ) {
+    return this.departmentService.findAll(skip, take);
   }
 
   @UseGuards(JwtAuthGuard)
