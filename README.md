@@ -139,9 +139,10 @@ npx prisma studio
 
 ```
 
-![GraphQL - Login](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.17.32.png)
+- Image showing Prisma studio UI
+  ![GraphQL - Create Department](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.58.png)
 
-![GraphQL - Create Department](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.58.png)
+![GraphQL - Login](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.17.32.png)
 
 - Image showing GraphQL - Sign-up  
   ![GraphQL - Sign-up](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.18.29.png)
