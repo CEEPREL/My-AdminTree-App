@@ -46,18 +46,23 @@ This project showcases a complete backend with frontend integration using modern
 
 ## 1. Clone the Repository
 
--File structure
-/tactology
-├── /server # Backend (GraphQL, NestJs.)
+- File structure
+
+```bash
+
+tactology
+├── server # Backend (GraphQL, NestJs.)
 │ ├── src
 │ └── (backend files and folders)
 ├
-|── /frontend # Frontend (Next.js, Tailwind.)
+|── frontend # Frontend (Next.js, Tailwind.)
 │ ├── public
 │ ├── src
 │ └── (frontend files)
-│  
+│
 └── README.md
+
+```
 
 ```bash
 git clone https://github.com/CEEPREL/tactology.git
