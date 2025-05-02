@@ -124,26 +124,27 @@ npx prisma studio
 
 ```
 
-[img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.36.png")
-[img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.58.png")
+![GraphQL - Login](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.36.png)
 
-- Image showing Graphql -Sign-up
-  [img]('https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.24.png')
+![GraphQL - Create Department](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.58.png)
 
-- Image showing Graphql -Login
-  [img]('https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.16.png')
+- Image showing GraphQL - Sign-up  
+  ![GraphQL - Sign-up](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.24.png)
 
-- Image showing Graphql -Create department
-  [img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.19.26.png")
+- Image showing GraphQL - Login  
+  ![GraphQL - Login](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.16.16.png)
 
-- Image showing Graphql -Fetch all department
-  [img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.20.07.png")
+- Image showing GraphQL - Create Department  
+  ![GraphQL - Create Department](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.19.26.png)
 
-- Image showing UI -Sign-up
-  [img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.18.29.png")
+- Image showing GraphQL - Fetch All Departments  
+  ![GraphQL - Fetch All Departments](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.20.07.png)
 
-- Image showing UI -Login
-  [img]("https://github.com/CEEPREL/tactology/blob/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.17.32.png")
+- Image showing UI - Sign-up  
+  ![UI - Sign-up](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.18.29.png)
 
-- Image showing UI -Departments(Fetch, create, update and delete)
-  [img]("https://github.com/CEEPREL/tactology/blob/1f0b9338e3e888eb39aa25eaf2be72402b10955f/frontend/public/Screenshot%202025-05-02%20at%2003.21.58.png")
+- Image showing UI - Login  
+  ![UI - Login](https://raw.githubusercontent.com/CEEPREL/tactology/1ca36f28f49db78ca62c0e9a068fff3d74e7c458/frontend/public/Screenshot%202025-05-02%20at%2001.17.32.png)
+
+- Image showing UI - Departments (Fetch, Create, Update, Delete)  
+  ![UI - Departments CRUD](https://raw.githubusercontent.com/CEEPREL/tactology/1f0b9338e3e888eb39aa25eaf2be72402b10955f/frontend/public/Screenshot%202025-05-02%20at%2003.21.58.png)
