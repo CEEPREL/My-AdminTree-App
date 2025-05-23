@@ -1,14 +1,14 @@
 # Simple Authentication and Authrization App
 
-### Implemented secure JWT-based authentication with login endpoint and token-protected routes for accessing department-related APIs.
+- **Implemented secure JWT-based authentication with login endpoint and token-protected routes for accessing department-related APIs.**
 
-### Built GraphQL endpoints to create, update, delete, and fetch departments with optional nested sub-departments and input validation.
+- **Built GraphQL endpoints to create, update, delete, and fetch departments with optional nested sub-departments and input validation.**
 
-### Deployed the entire backend application on Render.com ensuring public access and smooth API availability.
+- **Deployed the entire backend application on Render.com ensuring public access and smooth API availability.**
 
-### Developed a simple Next.js frontend for login, department creation, updates, and displaying department hierarchy visually.
+- **Developed a simple Next.js frontend for login, department creation, updates, and displaying department hierarchy visually.**
 
-### Added pagination and strict validation rules to maintain input integrity and support scalable department data fetching.
+- **Added pagination and strict validation rules to maintain input integrity and support scalable department data fetching.**
 
 ## Tech Stack
 
